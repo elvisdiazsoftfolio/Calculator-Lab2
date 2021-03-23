@@ -4,19 +4,16 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-
         Scanner calculator = new Scanner(System.in);
-
-        double first;
-        double second;
-        double result;
-        int operation;
+        double first = 0;
+        double second = 0;
+        double result = 0;
+        int operation = 0;
 
         System.out.println("Please enter the first number");
         first=calculator.nextDouble();
         System.out.println("Please enter the second number ");
         second=calculator.nextDouble();
-
         System.out.println("Calculator Menu \n---------------");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
@@ -46,8 +43,6 @@ public class Calculator {
             default:
                 System.out.println("Error: Invalid Selection! Terminating program.");
         }
-
-
     } //La indentacion de las } es importante sino te vas a perder cuando se complique
     }
 
