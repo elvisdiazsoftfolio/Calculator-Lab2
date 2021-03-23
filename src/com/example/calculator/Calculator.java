@@ -25,10 +25,11 @@ public class Calculator {
         System.out.println("Which operation do you want to perform?");
         operation = calculator.nextInt();
 
-        switch (operation){
+        switch (operation){ // No esta especificado en la orden creo, pero que caso pudiera romper este codigo?
             case 1:
              result = first + second;
-             System.out.println("The result of the operation is " + result + ". Goodbye!");
+             System.out.println("The result of the operation is " + result + ". Goodbye!"); //<- Mira a ver si se te ocurre alguna forma de eliminar/reusar la
+                                                                                            // repeticion de esta linea en cada case
              break;
             case 2:
             result = first - second;
@@ -47,6 +48,6 @@ public class Calculator {
         }
 
 
-    }
+    } //La indentacion de las } es importante sino te vas a perder cuando se complique
     }
 
